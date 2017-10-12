@@ -1,0 +1,549 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Bruch module &#8212; Bruch 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="top" title="Bruch 1.0 documentation" href="index.html" />
+    <link rel="prev" title="Welcome to Bruch’s documentation!" href="index.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to Bruch’s documentation!"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Bruch 1.0 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-bruch.Bruch">
+<span id="bruch-module"></span><h1>Bruch module<a class="headerlink" href="#module-bruch.Bruch" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="bruch.Bruch.Bruch">
+<em class="property">class </em><code class="descclassname">bruch.Bruch.</code><code class="descname">Bruch</code><span class="sig-paren">(</span><em>divisor_or_bruch</em>, <em>dividend=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bruch.Bruch.Bruch" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>The Bruch-Class represents a fraction with a integer-divisor and
+a integer-dividend. Nearly all operators can be used with this class.</p>
+<dl class="method">
+<dt id="bruch.Bruch.Bruch.__abs__">
+<code class="descname">__abs__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bruch.Bruch.Bruch.__abs__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the absolute value of the fraction</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A new Bruch-Instance</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.Bruch.Bruch.__add__">
+<code class="descname">__add__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="headerlink" href="#bruch.Bruch.Bruch.__add__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds a the fraction and a Bruch or a int</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>other</strong> (<a class="reference internal" href="#module-bruch.Bruch" title="bruch.Bruch"><em>Bruch</em></a>) &#8211; value to add</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">A new Bruch-Instance</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.Bruch.Bruch.__complex__">
+<code class="descname">__complex__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bruch.Bruch.Bruch.__complex__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Converts the fraction to a complex number</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A complex number representing the fraction</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.Bruch.Bruch.__eq__">
+<code class="descname">__eq__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="headerlink" href="#bruch.Bruch.Bruch.__eq__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compares if the fraction is equal with a int or a Bruch</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>other</strong> (<a class="reference internal" href="#module-bruch.Bruch" title="bruch.Bruch"><em>Bruch</em></a>) &#8211; value to compare</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">If it is equal</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.Bruch.Bruch.__float__">
+<code class="descname">__float__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bruch.Bruch.Bruch.__float__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Converts the fraction to a floating-point number</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A floating-point number representing the fraction</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.Bruch.Bruch.__ge__">
+<code class="descname">__ge__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="headerlink" href="#bruch.Bruch.Bruch.__ge__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compares if the fraction is greater or equal with a int or a Bruch</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>other</strong> (<a class="reference internal" href="#module-bruch.Bruch" title="bruch.Bruch"><em>Bruch</em></a>) &#8211; value to compare</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">If it is greater or equal</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.Bruch.Bruch.__gt__">
+<code class="descname">__gt__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="headerlink" href="#bruch.Bruch.Bruch.__gt__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compares if the fraction is greater than a int or a Bruch</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>other</strong> (<a class="reference internal" href="#module-bruch.Bruch" title="bruch.Bruch"><em>Bruch</em></a>) &#8211; value to compare</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">If it is greater</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.Bruch.Bruch.__iadd__">
+<code class="descname">__iadd__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="headerlink" href="#bruch.Bruch.Bruch.__iadd__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds a Bruch or a int to the fraction</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>other</strong> (<a class="reference internal" href="#module-bruch.Bruch" title="bruch.Bruch"><em>Bruch</em></a>) &#8211; value to add</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The given instance</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.Bruch.Bruch.__imul__">
+<code class="descname">__imul__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="headerlink" href="#bruch.Bruch.Bruch.__imul__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Multiplies the fraction with an int or a Bruch</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>other</strong> (<a class="reference internal" href="#module-bruch.Bruch" title="bruch.Bruch"><em>Bruch</em></a>) &#8211; value to multiply</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The given instance</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.Bruch.Bruch.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>divisor_or_bruch</em>, <em>dividend=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bruch.Bruch.Bruch.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a new Bruch-Object (fraction) containing a divisor and a dividend</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>divisor_or_bruch</strong> (<em>Bruch A Bruch-Instance to copy</em>) &#8211; The divisor or a Bruch-Instance to copy</li>
+<li><strong>dividend</strong> (<em>None The divisor is represented as a full number (the dividend is 1)</em>) &#8211; The dividend or None if the Bruch should represent a full number by the divisor</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.Bruch.Bruch.__int__">
+<code class="descname">__int__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bruch.Bruch.Bruch.__int__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculates the fraction to a floating-point number and then floors the value to an int</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A int representing the fraction</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.Bruch.Bruch.__invert__">
+<code class="descname">__invert__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bruch.Bruch.Bruch.__invert__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Inverts the fraction by swapping the divisor and the dividend</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A new Bruch-Instance</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.Bruch.Bruch.__isub__">
+<code class="descname">__isub__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="headerlink" href="#bruch.Bruch.Bruch.__isub__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Subtracts a Bruch or a int from the fraction</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>other</strong> (<a class="reference internal" href="#module-bruch.Bruch" title="bruch.Bruch"><em>Bruch</em></a>) &#8211; value to subtract</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The given instance</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.Bruch.Bruch.__iter__">
+<code class="descname">__iter__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bruch.Bruch.Bruch.__iter__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a iterator with divisor and dividend</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A iterator with the divisor and dividend</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.Bruch.Bruch.__itruediv__">
+<code class="descname">__itruediv__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="headerlink" href="#bruch.Bruch.Bruch.__itruediv__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Divides the fraction with an int or a Bruch</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>other</strong> (<a class="reference internal" href="#module-bruch.Bruch" title="bruch.Bruch"><em>Bruch</em></a>) &#8211; value to divide</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The given instance</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.Bruch.Bruch.__le__">
+<code class="descname">__le__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="headerlink" href="#bruch.Bruch.Bruch.__le__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compares if the fraction is lesser or equal with a int or a Bruch</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>other</strong> (<a class="reference internal" href="#module-bruch.Bruch" title="bruch.Bruch"><em>Bruch</em></a>) &#8211; value to compare</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">If it is lesser or equal</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.Bruch.Bruch.__lt__">
+<code class="descname">__lt__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="headerlink" href="#bruch.Bruch.Bruch.__lt__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compares if the fraction is less than a int or a Bruch</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>other</strong> (<a class="reference internal" href="#module-bruch.Bruch" title="bruch.Bruch"><em>Bruch</em></a>) &#8211; value to compare</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">If it is lesser</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.Bruch.Bruch.__mul__">
+<code class="descname">__mul__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="headerlink" href="#bruch.Bruch.Bruch.__mul__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Multiplies the fraction with an int or a Bruch</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>other</strong> (<a class="reference internal" href="#module-bruch.Bruch" title="bruch.Bruch"><em>Bruch</em></a>) &#8211; value to multiply</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">A new Bruch-Instance</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.Bruch.Bruch.__ne__">
+<code class="descname">__ne__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="headerlink" href="#bruch.Bruch.Bruch.__ne__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compares if the fraction is not equal with a int or a Bruch</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>other</strong> (<a class="reference internal" href="#module-bruch.Bruch" title="bruch.Bruch"><em>Bruch</em></a>) &#8211; value to compare</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">If it is not equal</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.Bruch.Bruch.__neg__">
+<code class="descname">__neg__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bruch.Bruch.Bruch.__neg__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Negates the fraction</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A new Bruch-Instance</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.Bruch.Bruch.__pow__">
+<code class="descname">__pow__</code><span class="sig-paren">(</span><em>power</em>, <em>modulo=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bruch.Bruch.Bruch.__pow__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Raises the fraction by the given power</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>power</strong> &#8211; The given power</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">A new Bruch-Instance</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.Bruch.Bruch.__radd__">
+<code class="descname">__radd__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="headerlink" href="#bruch.Bruch.Bruch.__radd__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds a the fraction and a Bruch or a int</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>other</strong> (<a class="reference internal" href="#module-bruch.Bruch" title="bruch.Bruch"><em>Bruch</em></a>) &#8211; value to add</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">A new Bruch-Instance</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.Bruch.Bruch.__repr__">
+<code class="descname">__repr__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bruch.Bruch.Bruch.__repr__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Converts the fraction to a string</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A string representing the fraction</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.Bruch.Bruch.__rmul__">
+<code class="descname">__rmul__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="headerlink" href="#bruch.Bruch.Bruch.__rmul__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Multiplies the fraction with an int or a Bruch</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>other</strong> (<a class="reference internal" href="#module-bruch.Bruch" title="bruch.Bruch"><em>Bruch</em></a>) &#8211; value to multiply</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">A new Bruch-Instance</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.Bruch.Bruch.__rsub__">
+<code class="descname">__rsub__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="headerlink" href="#bruch.Bruch.Bruch.__rsub__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Subtracts the fraction from an int or a Bruch</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>other</strong> (<a class="reference internal" href="#module-bruch.Bruch" title="bruch.Bruch"><em>Bruch</em></a>) &#8211; value from which it should be subtracted from</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">A new Bruch-Instance</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.Bruch.Bruch.__rtruediv__">
+<code class="descname">__rtruediv__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="headerlink" href="#bruch.Bruch.Bruch.__rtruediv__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Divides an int or a Bruch with the fraction</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>other</strong> (<a class="reference internal" href="#module-bruch.Bruch" title="bruch.Bruch"><em>Bruch</em></a>) &#8211; value to with the fraction should be divided</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">A new Bruch-Instance</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.Bruch.Bruch.__sub__">
+<code class="descname">__sub__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="headerlink" href="#bruch.Bruch.Bruch.__sub__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Subtracts a Bruch or a int from the fraction</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>other</strong> (<a class="reference internal" href="#module-bruch.Bruch" title="bruch.Bruch"><em>Bruch</em></a>) &#8211; value to subtract</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">A new Bruch-Instance</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="bruch.Bruch.Bruch.__truediv__">
+<code class="descname">__truediv__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="headerlink" href="#bruch.Bruch.Bruch.__truediv__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Divides the fraction with an int or a Bruch</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>other</strong> (<a class="reference internal" href="#module-bruch.Bruch" title="bruch.Bruch"><em>Bruch</em></a>) &#8211; value to divide</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">A new Bruch-Instance</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">Welcome to Bruch&#8217;s documentation!</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/Bruch.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to Bruch’s documentation!"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Bruch 1.0 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2016, Kevin Waldock.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.8.
+    </div>
+  </body>
+</html>
